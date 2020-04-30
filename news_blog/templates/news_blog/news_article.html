@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <main role="main" class="container">
+    {% extends "news_blog/base.html" %}
+    {% block title %}Article ID: {{ article.id }}{% endblock %}
+    {% block content %}
+        <div class="row">
+            <div class="col-sm">
+                <h3>{{ article.title }}</h3>
+                <p>{{ article.text }}</p>
+            </div>
+        </div>
+    {% endblock %}
+    </main>
+</body>
+</html>
